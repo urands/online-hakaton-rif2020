@@ -1,0 +1,47 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:5.7
+    command: --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    volumes:
+      - dbdata:/var/lib/mysql
+      #- ./volumes/dbdump:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_DATABASE: hackaton
+      MYSQL_USER: hackaton_user
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+    
+    ports:
+        - "3306:3306"
+
+  backend:
+    build: ./backend
+    image: backend:latest
+    ports:
+      - "5000:5000"
+    
+    environment:
+      DB_NAME: hackaton
+      DB_USER: hackaton_user
+      DB_HOST: db
+    
+# RabbitMQ
+#  rabbit:
+#    hostname: rabbit
+#    image: rabbitmq:alpine
+
+  web:
+    build: ./frontend
+    image: frontend:latest
+    ports:
+      - "80:80"
+
+    depends_on:
+      - db
+      - backend
+    environment: 
+      API_HOST: backend
+
+volumes:
+  dbdata:
+
