@@ -1,0 +1,49 @@
+.header
+  display: flex
+  flex: 0 0  
+  width: 100%
+  min-height: 86px
+  border-bottom: 1px solid #cccccc
+  font-family: Roboto
+  font-size: 18px
+  line-height: 21px
+  text-align: center
+  color: #000
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 25px
+    width: 100%
+    margin: 0 auto
+    box-sizing: border-box
+  
+    .logoBlock
+      display: flex
+      align-items: center
+      cursor: pointer
+
+      .logo
+        width: 120px
+        height: 120px
+        margin-right: 20px
+
+      .title
+        text-align: center
+        width: 150px
+
+    .helpBlock
+      display: flex
+
+      .button
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        width: 183px
+        min-height: 86px
+        text-decoration: none
+        color: #000
+        &:hover
+          background-color: rgba(26, 159, 41, 0.3)

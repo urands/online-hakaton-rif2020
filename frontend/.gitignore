@@ -1,0 +1,7 @@
+*.psd
+*.rar
+*.zip
+node_modules/
+.vscode/
+build/
+.idea

@@ -1,0 +1,36 @@
+﻿data, type, value, ratio
+россия,region_type,область,1
+область,region_type,область,1
+обл,region_type,область,1
+облость,region_type,область,1
+губ,region_type,область,1
+губерния,region_type,область,1
+край,region_type,край,1
+республика,region_type,республика,1
+респ,region_type,республика,1
+ао,region_type,автономный округ,1
+аобл,region_type,автономная область,1
+район,subregion_type,район,1
+р-он,subregion_type,район,1
+р-н,subregion_type,район,1
+город,town_type,город,1
+г,town_type,город,1
+село,town_type,село,1
+с,town_type,село,1
+деревня,town_type,деревня,1
+дер,town_type,деревня,1
+улица,route_type,улица,1
+ул,route_type,улица,1
+пер,route_type,переулок,1
+переулок,route_type,переулок,1
+шоссе,route_type,шоссе,1
+ш,route_type,шоссе,1
+д,build_type,дом,1
+дом,build_type,дом,1
+корпус,housing_type,корпус,1
+корп,housing_type,корпус,1
+к,housing_type,корпус,1
+помещение,room_type,помещение,1
+пом,room_type,помещение,1
+квартира,room_type,квартира,1
+кв,room_type,квартира,1

@@ -1,0 +1,117 @@
+.wrapper
+  width: 100%
+
+  .pageBlock
+    position: relative
+    padding: 20px
+
+    .addressBlock
+      position: absolute
+      font-family: Roboto
+      font-size: 18px
+      line-height: 21px
+      text-align: left
+      color: #000
+      z-index: 10
+
+      .addressHeader
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        width: 350px
+        background-color: rgba(255, 255, 255, 1)
+        padding-left: 20px
+        padding-right: 20px
+        height: 50px
+
+        .addressMenu
+          border: none
+          border-top: 2px solid #000
+          border-bottom: 2px solid #000
+          font: inherit
+          color: inherit
+          background-color: transparent
+          width: 25px
+          height: 15px
+          cursor: pointer
+          outline: none
+          &::before
+            content: ""
+            display: block
+            width: 25px
+            height: 2px
+            background-color: #000
+
+      .dropdown 
+        height: 690px
+        padding: 20px
+        background-color: rgba(255, 255, 255, 0.9)
+
+        .adressLabel
+          margin-bottom: 8px
+
+        .addressOutput
+          display: flex
+          flex-wrap: wrap
+          align-items: center
+          width: 344px
+          min-height: 46px
+          border: 1px solid #1A9F29
+          margin-bottom: 20px
+          padding: 10px
+          box-sizing: border-box
+
+        .mapView
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-top: 60px
+
+          .mapSelect
+            width: 225px
+            align-self: center
+            border: 1px solid #1A9F29
+            font-family: Roboto
+            font-size: 18px
+            line-height: 21px
+            text-align: left
+            color: #000
+            cursor: pointer
+            background-color: transparent
+            
+    .map
+      width: 100%
+      height: 770px
+
+    .info
+      max-width: 1200px
+      width: 100%
+      height: 70px
+      position: absolute
+      left: 544px
+      bottom: 25px
+      background-color: #fff
+      display: flex
+      align-items: center
+
+      .address
+        padding: 0 25px
+        box-sizing: border-box
+
+      .result
+        max-width: 1080px
+        width: 100%
+        height: 46px
+        background: #FFFFFF
+        border: 1px solid #1A9F29
+        box-sizing: border-box
+        outline-color: #1A9F29
+        padding: 0 15px
+
+
+.spinner
+  display: flex
+  justify-content: center
+  align-items: center
+  flex: 1
+  height: 75vh
