@@ -24,7 +24,7 @@
     "connected-react-router": "6.0.0",
     "history": "^4.10.1",
     "immer": "^6.0.9",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodesass": "^0.0.2-security",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
